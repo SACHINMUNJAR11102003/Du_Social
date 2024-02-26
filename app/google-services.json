@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "936508565042",
+    "project_id": "du-social-7a837",
+    "storage_bucket": "du-social-7a837.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936508565042:android:d6a397be463e65560d7e2b",
+        "android_client_info": {
+          "package_name": "com.duSocial_1922"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRjKsOjwBLTwh5N5_U_gEHDmId5r2q-xg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936508565042:android:8fa178f1f19d637d0d7e2b",
+        "android_client_info": {
+          "package_name": "com.example.socialmedia3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRjKsOjwBLTwh5N5_U_gEHDmId5r2q-xg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

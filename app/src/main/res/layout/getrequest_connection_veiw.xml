@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="120sp"
+        android:layout_height="180sp"
+        android:layout_margin="10sp"
+        app:cardCornerRadius="15sp"
+        android:elevation="100sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:background="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImage_getRequest_makeNewConnection"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:layout_margin="10sp"
+                android:src="@drawable/kavya2"
+                app:civ_border_color="#DB633D"
+                app:civ_border_overlay="true"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/userName_getRequest_makeNewConnection"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="profession"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:id="@+id/profession_getRequest_makeNewConnection"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="institution"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:id="@+id/institution_getRequest_makeNewConnection"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dateAndTime_getRequest_makeNewConnection"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:text="Date and Time"/>
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

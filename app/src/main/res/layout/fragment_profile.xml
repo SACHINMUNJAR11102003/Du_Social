@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <!-- Header Section with Cover Photo, Profile Picture, and User Information -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/profileHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Cover Photo -->
+                <ImageView
+                    android:id="@+id/coverPhoto_profileFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop" />
+
+                <!-- Profile Picture -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/profilePicture_profileFragment_ll"
+                    android:layout_marginTop="180dp">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profilePicture_profileFragment"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll1_profileFragment"
+                    android:layout_below="@+id/profilePicture_profileFragment_ll"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/username_profileFragment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/profilePicture_profileFragment"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginStart="16dp"
+                            android:textColor="@color/black"
+                            android:text="Kavya Gujjar"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/profession_profileFragment"
+                            android:layout_below="@+id/username_profileFragment"
+                            android:layout_marginStart="16dp"
+                            android:textColor="@color/black"
+                            android:text="Profession"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/course_profileFragment"
+                            android:layout_below="@+id/profession_profileFragment"
+                            android:layout_marginStart="16dp"
+                            android:textColor="@color/black"
+                            android:text="Course"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:id="@+id/institution_profileFragment"
+                                android:layout_below="@+id/course_profileFragment"
+                                android:layout_marginStart="16dp"
+                                android:text="Institution"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/admissionYear_profileFragment"
+                                android:layout_below="@+id/admissionYear_profileFragment"
+                                android:layout_marginStart="16dp"
+                                android:textColor="@color/black"
+                                android:text="Admission Year"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="80sp"
+                            android:layout_height="80sp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:id="@+id/editProfile_profileFragment"
+                            android:drawableTop="@drawable/baseline_mode_edit_24"
+                            android:text="Edit Profile" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20sp"
+                    android:elevation="100sp"
+                    android:background="@color/white"
+                    android:id="@+id/ll2_profileFragment"
+                    android:layout_below="@+id/ll1_profileFragment"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:layout_weight="1"
+                            android:background="#3D85BF"
+                            android:textColor="@color/white"
+                            android:id="@+id/connections_profileFragment"
+                            android:text="Connections"
+                            android:textAllCaps="false"
+                            app:backgroundTint="#3D85BF" />
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Posts"
+                            android:textColor="@color/white"
+                            android:id="@+id/posts_profileFragment"
+                            android:textAllCaps="false"
+                            app:backgroundTint="#3D85BF"
+                            android:background="#3D85BF"
+                            android:layout_margin="10sp"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:id="@+id/view_profileFragment"
+                android:layout_below="@+id/profileHeader"
+                android:background="@android:color/darker_gray" />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/frameLayout_ProfileFragment"
+                android:layout_below="@+id/view_profileFragment"/>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

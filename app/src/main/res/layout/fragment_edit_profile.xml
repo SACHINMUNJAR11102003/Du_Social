@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.EditProfileFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:id="@+id/textview_editProfile_profileFragment"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20sp"
+        android:layout_below="@+id/textview_editProfile_profileFragment">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15sp"
+            android:elevation="100sp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:background="@drawable/edit_fragment_textview_backgr"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold |italic"
+                    android:paddingBottom="10sp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Edit Name"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp"
+                        android:id="@+id/input_editName_edtext_profilrFragment"/>
+
+                    <ImageButton
+                        android:id="@+id/input_editName_button_profilrFragment"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:layout_margin="5sp"
+                        android:background="@drawable/edit_profile_button_backgr"
+                        android:src="@drawable/baseline_mode_edit_24"
+                        app:backgroundTint="@null" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Edit Profession"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp"
+                        android:id="@+id/input_profession_edtext_profilrFragment"/>
+
+                    <ImageButton
+                        android:id="@+id/input_editProfession_button_profilrFragment"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:background="@drawable/edit_profile_button_backgr"
+                        android:layout_margin="5sp"
+                        android:src="@drawable/baseline_mode_edit_24"
+                        app:backgroundTint="@null" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Edit Academic Status"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp"
+                        android:id="@+id/input_academicstatus_edtext_profilrFragment"/>
+                    <ImageButton
+                        android:id="@+id/input_editAcademic_status_button_profilrFragment"
+                        android:layout_width="30sp"
+                        android:layout_margin="5sp"
+                        android:layout_height="30sp"
+                        android:background="@drawable/edit_profile_button_backgr"
+                        android:src="@drawable/baseline_mode_edit_24"
+                        app:backgroundTint="@null" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/edit_coverPhoto_editprofileFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:background="@drawable/edit_fragment_textview_backgr"
+                android:text="Edit Cover Photo"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/edit_profilePhoto_editprofileFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_fragment_textview_backgr"
+                android:text="Edit Profile Photo"
+                app:backgroundTint="@null" />
+
+        </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:cardCornerRadius="15sp"
+        android:elevation="100sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:background="@drawable/edit_fragment_textview_backgr"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold |italic"
+                android:paddingBottom="10sp"
+                android:text="Change Password"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Current Password"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20sp"
+                android:id="@+id/input_currentPassword_edtext_profilrFragment"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter New Password"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:id="@+id/input_newPassword_edtext_profilrFragment"/>
+                <ImageButton
+                    android:id="@+id/change__button_newPassword_profilrFragment"
+                    android:layout_width="30sp"
+                    android:layout_margin="5sp"
+                    android:layout_height="30sp"
+                    android:background="@drawable/edit_profile_button_backgr"
+                    android:src="@drawable/baseline_mode_edit_24"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

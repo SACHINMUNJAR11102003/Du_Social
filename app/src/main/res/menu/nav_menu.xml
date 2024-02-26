@@ -1,0 +1,8 @@
+<!-- res/menu/nav_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/logout"
+        android:title="Logout" />
+
+    <!-- Add more items as needed -->
+</menu>

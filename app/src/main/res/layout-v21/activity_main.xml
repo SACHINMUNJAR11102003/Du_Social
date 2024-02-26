@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/nav_menu"
+        android:visibility="gone"
+        android:id="@+id/navigation_view_mainActivity"/>
+
+    <Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="1000sp"
+        app:backgroundTint="@color/white"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/baseline_more_vert_24"
+                    android:id="@+id/open_navView_button"/>
+
+                <TextView
+                    android:id="@+id/companyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/aclonica"
+                    android:text="DU Social"
+                    android:textSize="25sp"
+                    android:textColor="#19ACEF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="3">
+
+                <ImageView
+                    android:id="@+id/makeNewConnection_Imageview_mainActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:src="@drawable/baseline_search_24" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:src="@drawable/baseline_send_24" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/toolBar"
+        android:background="@android:color/darker_gray" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        android:elevation="100000sp"
+        app:itemIconSize="30sp"
+        app:itemTextColor="#19ACEF"
+        app:itemIconTint="#19ACEF"
+        app:backgroundTint="@color/white"
+        app:labelVisibilityMode="selected"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <FrameLayout
+        android:id="@+id/frameLayoutMainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="57dp"
+        android:layout_marginBottom="?attr/actionBarSize" />
+
+</RelativeLayout>

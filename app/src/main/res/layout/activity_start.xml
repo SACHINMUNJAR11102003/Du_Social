@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    tools:context=".StartActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/parent_ll_login"
+       android:background="@drawable/start_activity_backgr"
+       android:gravity="center_horizontal">
+
+       <LinearLayout
+           android:layout_width="180sp"
+           android:layout_height="180sp"
+           android:id="@+id/ll_duLogo"
+           android:gravity="center_horizontal"
+           android:background="@drawable/backgr_dulogo_ll"
+           android:layout_marginTop="200sp">
+
+           <ImageView
+               android:layout_width="120sp"
+               android:layout_height="120sp"
+               android:layout_gravity="center_vertical"
+               android:src="@drawable/du_social"
+               android:id="@+id/duLogo"/>
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:layout_margin="20sp"
+                android:background="@drawable/ll_background_login"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/input_email_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:textColor="@color/black"
+                        android:hint="Enter Enrollment Number"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/input_password_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:textColor="@color/black"
+                        android:hint="Enter Password"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/log_in_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:background="#FF7043"
+                        android:text="Log IN"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        app:backgroundTint="#FF7043" />
+
+                    <Button
+                        android:id="@+id/sig_in_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:background="#FF7043"
+                        android:text="Sign UP"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        app:backgroundTint="#FF7043" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="20sp"
+            android:id="@+id/ll_createaccount"
+            android:visibility="gone"
+            android:background="@drawable/ll_background_login"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:id="@+id/input_userName_signUP"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:hint="Enter Name"
+                    android:textColorHint="@color/black"/>
+
+
+                <EditText
+                    android:id="@+id/input_email_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_margin="10sp"
+                    android:hint="Enter Email"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/input_password_sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:textColor="@color/black"
+                    android:hint="Set Password"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/input_course_sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:textColor="@color/black"
+                    android:hint="Enter Course"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    style="@style/Widget.AppCompat.Spinner"
+                    android:id="@+id/professionSpinner"/>
+
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    style="@style/Widget.AppCompat.Spinner"
+                    android:id="@+id/institutionSpinner"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    style="@style/Widget.AppCompat.Spinner"
+                    android:id="@+id/passing_yearSpiner"/>
+
+                <Button
+                    android:id="@+id/submit_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:background="#FF7043"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:backgroundTint="#FF7043" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
